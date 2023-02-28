@@ -23,7 +23,7 @@
   <!-- <Header /> -->
   <div class="flex-grow flex flex-col sm:flex-row w-full pt-10 sm:pt-20 max-w-7xl mx-auto">
     <Nav />
-    <div class="px-4 sm:px-0">
+    <div class="px-4">
       <slot />
     </div>
   </div>

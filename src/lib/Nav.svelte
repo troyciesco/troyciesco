@@ -4,7 +4,7 @@
   import Logo from "./Logo.svelte"
 </script>
 
-<ul class="px-4 sm:px-20 space-y-4 flex justify-between sm:justify-start sm:flex-col">
+<ul class="px-4 sm:px-20 sm:space-y-4 flex items-center sm:items-start justify-between sm:justify-start sm:flex-col">
   <li>
     <a href="/"><Logo /></a>
   </li>
