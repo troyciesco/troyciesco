@@ -1,0 +1,42 @@
+---
+import Header from "@/components/Header.astro"
+import "@fontsource/ibm-plex-sans/400.css"
+import "@fontsource/ibm-plex-sans/700.css"
+import "@fontsource/ibm-plex-serif"
+import "@fontsource/ibm-plex-mono"
+import "@fontsource/ibm-plex-sans-condensed/100.css"
+import "@fontsource/ibm-plex-sans-condensed/400.css"
+import "@fontsource/ibm-plex-sans-condensed/700.css"
+import "@/styles/tailwind.css"
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Troy Ciesco</title>
+		<meta property="og:title" content="Troy Ciesco" />
+		<meta
+			name="description"
+			content="I'm a software engineer in Boston specializing in JavaScript/TypeScript, React, and Vue."
+		/>
+		<meta
+			property="og:description"
+			content="I'm a software engineer in Boston specializing in JavaScript/TypeScript, React, and Vue."
+		/>
+		<meta
+			name="keywords"
+			content="Troy Ciesco, software engineer, Boston, web development, JavaScript, TypeScript, React, Vue"
+		/>
+		<meta property="og:url" content="https://troycies.co" />
+		<meta property="og:type" content="website" />
+	</head>
+	<body class="bg-base text-contrast min-h-screen flex flex-col">
+		<div class="max-w-7xl mx-auto px-8 grow">
+			<slot />
+		</div>
+		<footer class="text-center p-4">Made with 🍕 in Boston.</footer>
+	</body>
+</html>

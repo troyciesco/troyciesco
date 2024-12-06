@@ -1,0 +1,15 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/forms";
+@plugin "@tailwindcss/typography";
+
+@theme {
+	--font-sans: "IBM Plex Sans", sans-serif;
+	--font-display: "IBM Plex Sans Condensed", sans-serif;
+	--color-contrast: #fdf9ed;
+	--color-link: #cde77f;
+	--color-base: #04264e;
+}
+
+a {
+	color: var(--color-link);
+}
