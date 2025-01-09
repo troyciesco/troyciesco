@@ -1,0 +1,18 @@
+---
+const { title, description } = Astro.props
+---
+
+<section class="md:py-24 text-[#1A30FF]">
+	<div class="max-w-[1480px] mx-auto px-8 md:px-10">
+		<div class="mb-10">
+			<h2
+				class="text-4xl md:text-5xl font-condensed font-bold tracking-[-0.04em] mb-4 max-w-prose text-balance">
+				{title}
+			</h2>
+			<p class="prose text-[#1A30FF]">
+				{description}
+			</p>
+		</div>
+		<slot />
+	</div>
+</section>
