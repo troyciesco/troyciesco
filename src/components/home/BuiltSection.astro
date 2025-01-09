@@ -1,0 +1,41 @@
+---
+const posts = [
+	{
+		title: "The Burrito Method of Task Estimation",
+		description: "This is a description of the blog post"
+	},
+	{
+		title: "Blog Post Two",
+		description: "This is a description of the blog post"
+	},
+	{
+		title: "Blog Post Three",
+		description: "This is a description of the blog post"
+	}
+]
+---
+
+<section class="py-24 text-[#1A30FF]">
+	<div class="max-w-[1480px] mx-auto px-24">
+		<div class="mb-10">
+			<h2
+				class="text-5xl font-condensed font-bold tracking-[-0.04em] mb-4 max-w-prose">
+				I've built some stuff
+			</h2>
+			<p class="prose text-[#1A30FF]">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
+				blanditiis hic ducimus dolore vitae temporibus.
+			</p>
+		</div>
+		<div class="grid grid-cols-3 gap-8">
+			{
+				posts.map((post) => (
+					<article>
+						<h3>{post.title}</h3>
+						<p>{post.description}</p>
+					</article>
+				))
+			}
+		</div>
+	</div>
+</section>

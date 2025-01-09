@@ -1,9 +1,21 @@
 ---
+import Hero from "@/components/home/Hero.astro"
+import CustomSection from "@/components/home/CustomSection.astro"
+import DevelopmentSection from "@/components/home/DevelopmentSection.astro"
+import TeachingSection from "@/components/home/TeachingSection.astro"
 import BaseLayout from "@/layouts/BaseLayout.astro"
+import BlogSection from "@/components/home/BlogSection.astro"
+import BuiltSection from "@/components/home/BuiltSection.astro"
 ---
 
 <BaseLayout>
-	<main>
+	<Hero />
+	<DevelopmentSection />
+	<BlogSection />
+	<BuiltSection />
+	<!-- <TeachingSection /> -->
+	<!-- <CustomSection /> -->
+	<!-- <main>
 		<section class="pt-20">
 			<h1 class="text-7xl mb-16 font-display font-bold tracking-tight">
 				Hi, I'm Troy.
@@ -67,5 +79,5 @@ import BaseLayout from "@/layouts/BaseLayout.astro"
 				</ul>
 			</div>
 		</section>
-	</main>
+	</main> -->
 </BaseLayout>

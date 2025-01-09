@@ -1,0 +1,51 @@
+---
+import { Image } from "astro:assets"
+import troySpeaking from "@/assets/images/troy-speaking.jpg"
+---
+
+<section class="py-24 text-[#1A30FF]">
+	<div class="max-w-[1480px] mx-auto px-24">
+		<div class="mb-10 text-right flex flex-col items-end">
+			<h2
+				class="text-5xl font-condensed font-bold tracking-[-0.04em] mb-4 max-w-prose">
+				How I can help you
+			</h2>
+			<p class="prose text-right text-[#1A30FF]">
+				We're experts at what we do, but it didn't happen overnight. We've
+				learned a lot over the years and we want to share that knowledge with
+				you.
+			</p>
+		</div>
+		<div class="grid grid-cols-2 gap-20">
+			<div class="order-2 relative aspect-square">
+				<Image
+					class="absolute w-full h-full object-cover"
+					src={troySpeaking}
+					alt="Troy speaking at a conference in Singapore"
+				/>
+				<div class="bg-[#1a31ff90] absolute w-full h-full top-2 left-2 -z-[1]">
+				</div>
+			</div>
+			<div class="space-y-8">
+				<div class="prose text-[#1A30FF]">
+					<div class="font-bold">Courses &amp; Training</div> We create courses on
+					a variety of development topics, including guided training to skill up
+					your team.
+				</div>
+				<hr class="prose text-[#1a31ff90]" />
+				<div class="prose text-[#1A30FF]">
+					<div class="font-bold">Freelance or Team Augmentation</div>
+					I specialize in jumping into projects with tight deadlines that need a
+					spark. If you or your team need something built fast and well, get in touch.
+				</div>
+				<hr class="prose text-[#1a31ff90]" />
+				<div class="prose text-[#1A30FF]">
+					<div class="font-bold">Code Reviews</div> Sometimes you need another set
+					of 👀 to review your code and provide valuable feedback. Our experienced
+					team can help you improve the quality of your code and ensure best practices
+					are followed.
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

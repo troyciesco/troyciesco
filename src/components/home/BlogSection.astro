@@ -1,0 +1,74 @@
+---
+import { Image } from "astro:assets"
+
+const posts = [
+	{
+		title: "The Burrito Method of Task Estimation",
+		description: "This is a description of the blog post",
+		image: {
+			src: "https://picsum.photos/seed/a/550",
+			alt: "alt"
+		}
+	},
+	{
+		title: "Blog Post Two and this is like a pretty long title and stuff",
+		description: "This is a description of the blog post",
+		image: {
+			src: "https://picsum.photos/seed/b/550",
+			alt: "alt"
+		}
+	},
+	{
+		title: "Blog Post Three",
+		description: "This is a description of the blog post",
+		image: {
+			src: "https://picsum.photos/seed/c/550",
+			alt: "alt"
+		}
+	}
+]
+---
+
+<section class="md:py-24 text-[#1A30FF]">
+	<div class="max-w-[1480px] mx-auto px-8 md:px-10">
+		<div class="mb-10">
+			<h2
+				class="text-4xl md:text-5xl font-condensed font-bold tracking-[-0.04em] mb-4 max-w-prose text-balance">
+				I've written some stuff
+			</h2>
+			<p class="prose text-[#1A30FF]">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
+				blanditiis hic ducimus dolore vitae temporibus.
+			</p>
+		</div>
+		<div class="grid grid-cols-1 md:grid-cols-3 w-full gap-20">
+			{
+				posts.map((post) => (
+					<article class="relative bg-white border border-[#1a31ff90] flex flex-col justify-between">
+						<Image
+							src={post.image.src}
+							alt={post.image.alt}
+							width={550}
+							height={550}
+							class="w-full aspect-square object-cover"
+						/>
+						<div class="px-4 pt-4 grow">
+							<h3 class="text-lg font-bold mb-2">{post.title}</h3>
+							<p class="mb-8">
+								{post.description} Lorem ipsum dolor sit amet consectetur
+								adipisicing elit. Aliquam, velit? Autem ullam magnam expedita
+								aut.
+							</p>
+						</div>
+						<div class="w-full flex justify-end px-4 pb-4">
+							<button class="p-2 border-2 border-[#1a31ff90] border-dashed transition-all hover:bg-[#1a31ff90] hover:border-solid hover:text-white">
+								Read More
+							</button>
+						</div>
+						<div class="bg-[#1a31ff90] absolute w-full h-full top-2 right-2 -z-[1]" />
+					</article>
+				))
+			}
+		</div>
+	</div>
+</section>
