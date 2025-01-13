@@ -1,26 +1,42 @@
-<footer class="footer bg-[#1A30FF] p-10 text-white">
-	<aside>
-		<div class="font-bold font-condensed tracking-[-0.04em] text-4xl">TMC</div>
-		<nav>
-			<a
-				href="https://github.com/troyciesco"
-				class="hover:underline decoration-double">Github</a
-			>
-			<a
-				href="https://linkedin.com/in/troyciesco"
-				class="hover:underline decoration-double">
-				LinkedIn
-			</a>
-			<a
-				href="https://bsky.app/profile/troycies.co"
-				class="hover:underline decoration-double">
-				BlueSky
-			</a>
-		</nav>
-		<div>
+---
+import { Icon } from "astro-icon/components"
+---
+
+<footer class="bg-[#1A30FF] p-8 text-white">
+	<div class="flex items-center justify-center flex-col gap-4">
+		<div class="font-bold
+		font-condensed
+		tracking-[-0.04em]
+		text-4xl">TMC</div>
+
+		<ul class="flex items-center gap-8 text-2xl mb-4">
+			<li>
+				<a
+					href="https://github.com/troyciesco"
+					class="hover:underline decoration-double">
+					<Icon name="github" /><span class="sr-only">Github</span>
+				</a>
+			</li>
+			<li>
+				<a
+					href="https://linkedin.com/in/troyciesco"
+					class="hover:underline decoration-double">
+					<Icon name="linkedin" /><span class="sr-only">LinkedIn</span>
+				</a>
+			</li>
+			<li>
+				<a
+					href="https://bsky.app/profile/troycies.co"
+					class="hover:underline decoration-double">
+					<Icon name="bluesky" /><span class="sr-only">BlueSky</span>
+				</a>
+			</li>
+		</ul>
+		<div class="text-center">
 			© {new Date().getFullYear()} Troy Ciesco | Built with 🍕 in Boston
 		</div>
-	</aside>
+	</div>
+
 	<!-- <nav>
 		<div class="footer-title text-blue-200 opacity-100">Navigation</div>
 		<a href="/" class="hover:underline decoration-double">Home</a>
