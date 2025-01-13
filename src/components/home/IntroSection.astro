@@ -1,0 +1,78 @@
+---
+import { Image } from "astro:assets"
+import tmc from "@/assets/images/tmc.jpeg"
+---
+
+<section class="pb-10 pt-24 md:py-24 text-[#1A30FF]">
+	<div class="max-w-[1480px] mx-auto px-8 md:px-10">
+		<div class="mb-10">
+			<h2
+				class="text-4xl text-balance md:text-5xl font-condensed font-bold tracking-[-0.04em] mb-4 max-w-prose">
+				Hello! My name is Troy.
+			</h2>
+			<p class="prose text-[#1A30FF]">I like to write code.</p>
+		</div>
+		<div class="grid md:grid-cols-2 gap-20">
+			<div class="relative aspect-square">
+				<Image
+					class="absolute w-full h-full object-cover"
+					src={tmc}
+					alt="Troy Ciesco"
+				/>
+				<div class="bg-[#1a31ff90] absolute w-full h-full top-2 right-2 -z-[1]">
+				</div>
+			</div>
+			<div class="space-y-8">
+				<div class="prose text-[#1A30FF]">
+					<div class="font-bold">10+ Years of Full Stack Development</div> I was
+					working for a municipality in 2014 when they asked for some help updating
+					their website, and since then I've been hooked. About 65% of the time I'm
+					doing frontend development with React or Vue. The rest of the time is backend
+					development with TypeScript or Python.
+				</div>
+				<hr class="prose text-[#1a31ff90]" />
+				<div class="prose text-[#1A30FF]">
+					<div class="font-bold">Diverse Work Experience</div> I've worked in a bunch
+					of environments: startups/scaleups (Gemini), FAANG-ish (Hulu), agencies,
+					and freelance. I also spent six years in the US Army Reserve.
+				</div>
+				<hr class="prose text-[#1a31ff90]" />
+				<div class="prose text-[#1A30FF]">
+					<div class="font-bold">Career Highlights (so far!)</div>
+					<ul
+						class="mb-8 list-disc text-[#1A30FF] prose marker:text-[#1a31ff90]">
+						<li class="mb-2">
+							Building marketing pages and purchase logic for the
+							<a
+								class="font-bold underline decoration-double text-[#1A30FF]"
+								href="https://niftygateway.com/collections/pakmerge"
+								>$91m Pak NFT sale</a
+							>, the (as of June 2022) largest NFT sale and largest ever art
+							sale by a living creator
+						</li>
+						<li class="mb-2">
+							Building a site associated with a Super Bowl commerical that
+							received 1m+ page views and 250k+ signups
+						</li>
+						<li class="mb-2">
+							Leading a team of four to overhaul a Wordpress website for a
+							$10m/yr company that provides
+							<a
+								class="font-bold underline decoration-double text-[#1A30FF]"
+								href="https://nicabm.com"
+								>training for mental health professionals</a
+							>
+						</li>
+						<li class="mb-2">
+							<a
+								class="font-bold underline decoration-double text-[#1A30FF]"
+								href="https://medium.com/@tmciesco/the-burrito-method-of-task-estimation-973df97509bb">
+								Writing about
+							</a> how a scrum team can think about estimating tasks. 🌯
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

@@ -1,0 +1,56 @@
+---
+import { Image } from "astro:assets"
+import troyAndBecca from "@/assets/images/tc-bc-fenway.jpg"
+---
+
+<section class="py-24 text-[#1A30FF]">
+	<div class="max-w-[1480px] mx-auto px-24">
+		<div class="mb-10">
+			<h2
+				class="text-5xl font-condensed font-bold tracking-[-0.04em] mb-4 max-w-prose">
+				Outside of Work
+			</h2>
+			<p class="prose text-[#1A30FF]">
+				We're not just a services company. We also build our own products and
+				tools to help us and others build better software.
+			</p>
+		</div>
+		<div class="grid grid-cols-2 gap-20">
+			<div class="relative aspect-square">
+				<Image
+					class="absolute w-full h-full object-cover"
+					src={troyAndBecca}
+					alt="Troy speaking at a conference in Singapore"
+				/>
+				<div class="bg-[#1a31ff90] absolute w-full h-full top-2 right-2 -z-[1]">
+				</div>
+			</div>
+			<div class="space-y-8">
+				<div class="prose text-[#1A30FF]">
+					<div class="font-bold">I like wildlife</div> A few times a year I'll go
+					out and practice my wildlife photography, mainly in New England, but sometimes
+					in other places like Florida. I like that it's somewhat artistic but still
+					has a technical side that isn't strictly about coding. I'm also working
+					on <a href="https://taxonomi.app" class="text-[#1A30FF] font-bold"
+						>Taxonomi</a
+					>, a Duolingo-style game for learning about wildlife.
+				</div>
+				<hr class="prose" />
+				<div class="prose text-[#1A30FF]">
+					<div class="font-bold">9-Bit Goods</div> A retro-inspired online store
+					with a fake payment processor that we use for testing, teaching, and pretending
+					we're alchemists running our own little shop in a fantasy realm.
+				</div>
+				<hr class="prose" />
+				<div class="prose text-[#1A30FF]">
+					<div class="font-bold">New Englander</div> I split my time between Connecticut
+					(born &amp; raised) and Boston. I mean, <span class="italic"
+						>technically</span
+					> it's Cambridge, but we're literally steps from the Charles River, so
+					I just say Boston to avoid confusion with the UK Cambridge. So there you
+					go.
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

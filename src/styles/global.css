@@ -9,7 +9,3 @@
 	--color-link: #cde77f;
 	--color-base: #04264e;
 }
-
-a {
-	color: var(--color-link);
-}
